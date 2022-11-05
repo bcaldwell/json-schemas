@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "buildpack": {
+      "type": "object",
+      "properties": {
+        "uri": {
+          "type": "string",
+          "description": "A URL or path to an archive, or a path to a directory. If path is relative, it must be relative to the package.toml."
+        }
+      },
+      "required": [
+        "uri"
+      ],
+      "description": "The buildpack to package."
+    },
+    "dependencies": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "uri": {
+              "type": "string",
+              "description": "A URL or path to an archive, a packaged buildpack (saved as a .cnb file), or a directory. If path is relative, it must be relative to the package.toml."
+            }
+          },
+          "required": [
+            "uri"
+          ],
+          "description": "A set of dependent buildpack locations, for packaging a meta-buildpack. Each dependent buildpack location must correspond to an order group within the meta-buildpack being packaged"
+        }
+      ]
+    },
+    "platform": {
+      "type": "object",
+      "properties": {
+        "os": {
+          "type": "string",
+          "description": "The operating system type that the buildpackage will run on. Only linux or windows is supported. If omitted, linux will be the default."
+        }
+      },
+      "description": "The expected runtime environment for the buildpackage."
+    }
+  },
+  "required": [
+    "buildpack"
+  ]
+}
