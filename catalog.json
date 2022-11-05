@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json.schemastore.org/schema-catalog.json",
+  "schemas": [
+    {
+      "name": "buildpacks/package-toml",
+      "description": "JSON Schema for buildpacks package.toml",
+      "fileMatch": [
+        "package.toml"
+      ],
+      "url": "https://schemas.bcaldwell.ca/buildpacks/package-toml.json"
+    }
+  ]
+}
