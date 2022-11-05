@@ -3,7 +3,7 @@
   "schemas": [
     {
       "name": "buildpacks/package.toml",
-      "description": "TOML Schema for buildpacks package.toml",
+      "description": "Schema for buildpacks package.toml",
       "fileMatch": [
         "package.toml"
       ],
