@@ -28,8 +28,7 @@
         },
         "required": [
           "uri"
-        ],
-        "description": "Item in a set of dependent buildpack locations, for packaging a meta-buildpack. Each dependent buildpack location must correspond to an order group within the meta-buildpack being packaged"
+        ]
       }
     },
     "platform": {
