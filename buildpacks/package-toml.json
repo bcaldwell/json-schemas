@@ -18,21 +18,19 @@
     "dependencies": {
       "type": "array",
       "description": "A set of dependent buildpack locations, for packaging a meta-buildpack. Each dependent buildpack location must correspond to an order group within the meta-buildpack being packaged",
-      "items": [
-        {
-          "type": "object",
-          "properties": {
-            "uri": {
-              "type": "string",
-              "description": "A URL or path to an archive, a packaged buildpack (saved as a .cnb file), or a directory. If path is relative, it must be relative to the package.toml."
-            }
-          },
-          "required": [
-            "uri"
-          ],
-          "description": "Item in a set of dependent buildpack locations, for packaging a meta-buildpack. Each dependent buildpack location must correspond to an order group within the meta-buildpack being packaged"
-        }
-      ]
+      "items": {
+        "type": "object",
+        "properties": {
+          "uri": {
+            "type": "string",
+            "description": "A URL or path to an archive, a packaged buildpack (saved as a .cnb file), or a directory. If path is relative, it must be relative to the package.toml."
+          }
+        },
+        "required": [
+          "uri"
+        ],
+        "description": "Item in a set of dependent buildpack locations, for packaging a meta-buildpack. Each dependent buildpack location must correspond to an order group within the meta-buildpack being packaged"
+      }
     },
     "platform": {
       "type": "object",
