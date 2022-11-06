@@ -17,6 +17,7 @@
     },
     "dependencies": {
       "type": "array",
+      "description": "A set of dependent buildpack locations, for packaging a meta-buildpack. Each dependent buildpack location must correspond to an order group within the meta-buildpack being packaged"
       "items": [
         {
           "type": "object",
@@ -29,7 +30,7 @@
           "required": [
             "uri"
           ],
-          "description": "A set of dependent buildpack locations, for packaging a meta-buildpack. Each dependent buildpack location must correspond to an order group within the meta-buildpack being packaged"
+          "description": "inner A set of dependent buildpack locations, for packaging a meta-buildpack. Each dependent buildpack location must correspond to an order group within the meta-buildpack being packaged"
         }
       ]
     },
